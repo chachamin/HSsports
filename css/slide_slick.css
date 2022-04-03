@@ -156,7 +156,7 @@
     display: block;
     width: 100%;
     padding: 0;
-	top:620px;
+	top:500px;
     list-style: none;
     text-align: center;
     z-index:5;
@@ -251,8 +251,9 @@
 
 
 
-.main_top_slide .img01{height:780px; background:url(../images/visual_m01.jpg) 50% 50% no-repeat;}
-.main_top_slide .img02{height:780px; background:url(../images/visual_m02.jpg) 50% 50% no-repeat;}
+.main_top_slide .img01{height:550px; background:url(../images/bg_0330.png) 50% 50% no-repeat;}
+.main_top_slide .img02{height:550px; background:url(../images/bg_0330.png) 50% 50% no-repeat;}
+.main_top_slide .img03{height:550px; background:url(../images/bg_0330.png) 50% 50% no-repeat;}
 
 
 
