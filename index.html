@@ -207,8 +207,6 @@
             <div class="img01"></div>
             <div class="info">
                 <span class="txt_big"><img src="images/txt_visual_big01.png" alt=""></span>
-                <!-- <span class="txt_small">체육문화를 이끌어가는 화순군체육회!</span> -->
-                <span class="txt"></span>
             </div>
         </div>
 
@@ -216,8 +214,6 @@
             <div class="img02"></div>
             <div class="info">
                 <span class="txt_big"><img src="images/txt_visual_big01.png" alt=""></span>
-                <!-- <span class="txt_small">체육문화를 이끌어가는 화순군체육회!</span> -->
-                <span class="txt"></span>
             </div>
         
         </div>
@@ -225,28 +221,11 @@
             <div class="img03"></div>
             <div class="info">
                 <span class="txt_big"><img src="images/txt_visual_big01.png" alt=""></span>
-                <!-- <span class="txt_small">체육문화를 이끌어가는 화순군체육회!</span> -->
-                <span class="txt"></span>
             </div>
         </div>
     </section>
     <!-- //visual -->
 
-    <!-- 스포츠 이미지 -->
-    <!-- <div class="img_wrap inner">
-        <span class="scroll-btn">
-            <a href="#">
-                <span class="mouse">
-                    <span></span>
-                </span>
-            </a>
-            <p>scroll</p>
-        </span>
-
-        <p class="left"></p>
-        <p class="right"></p>
-    </div> -->
-    <!-- //스포츠 이미지 -->
 
     <!-- contents -->
     <section id="container">
@@ -261,7 +240,7 @@
                 <div class="n_i_wrap">
                     <div class="m_notice">
                         <h4>공지사항</h4>
-                        <ul>
+                        <ul class="m_n_list">
                             <li>
                                 <a href="#">
                                     <p class="m_n_title">
@@ -297,22 +276,23 @@
                         </ul>
                     </div>
                     <div class="ico_q_menu">
-                        <ul>
+                        <ul class="i_q_list">
                             <li><a href="#">경기/행사일정</a></li>
                             <li><a href="#">대회정보</a></li>
                             <li><a href="#">대회참가신청</a></li>
                         </ul>
                     </div>
                 </div>
-                <!-- 공지사항 & 아이콘메뉴 끝-->
+                <!-- //공지사항 & 아이콘메뉴-->
 
                 <!-- 갤러리 -->
                 <div class="m_gallery">
                     <ul id="gTab">
-                        <li>포토갤러리</li>
-                        <li class="s_blur">동영상게시판</li>
+                        <li class="f_on">포토갤러리</li>
+                        <li>동영상게시판</li>`
                     </ul>
 
+                    <!-- 포토갤러리 -->
                     <div id="photoG">
                         <div class="new_g">
                             <a href="#">
@@ -354,8 +334,11 @@
                                 </li>
                             </ul>
                         </div>
+                        <a href="#" class="g_more">더보기 +</a>
                     </div>
+                    <!-- //포토갤러리 -->
 
+                    <!-- 동영상게시판 -->
                     <div id="videoG">
                         <div class="new_g">
                             <a href="#">
@@ -397,80 +380,14 @@
                                 </li>
                             </ul>
                         </div>
+                        <a href="#" class="g_more">더보기 +</a>
                     </div>
-                    
+                    <!-- //동영상게시판 -->
+
                 </div>
-
             </div>
-
         </section>
         <!-- //최근게시물 -->
-
-        <!-- 바로가기 -->
-        <section class="link_wrap">
-            <div class="inner">
-                <div class="box">
-                    <img src="images/m_c_btn01.jpg" alt="">
-                    <dl>
-                        <dt>회원종목단체</dt>
-                        <dd>종목단체현황 및 종목단체소식을 열람하실 있습니다.</dd>
-                        <dd><a href="/contents.do?S=S01&M=030101000000">상세보기</a></dd>
-                    </dl>
-                </div>
-                <div class="box">
-                    <img src="images/m_c_btn02.jpg" alt="">
-                    <dl>
-                        <dt>체육단체</dt>
-                        <dd>학교전문체육선수 및 직장운동경기부의 현황을 확인하실 수 있습니다.</dd>
-                        <dd><a href="/contents.do?S=S01&M=030201000000">상세보기</a></dd>
-                    </dl>
-                </div>
-                <div class="box">
-                    <img src="images/m_c_btn03.jpg" alt="">
-                    <dl>
-                        <dt>경기/행사일정</dt>
-                        <dd>화순군 체육회의 경기 및 행사 일정을 확인 하실 수 있습니다.</dd>
-                        <dd><a href="/calendar.do?S=S01&M=020200000000">상세보기</a></dd>
-                    </dl>
-                </div>
-
-
-            </div>
-
-        </section>
-        <!-- //바로가기 -->
-
-        <!-- 체육회 사업 -->
-        <section class="business_wrap">
-            <div class="m_tit">
-                <h3>체육회사업</h3>
-                <p>화순군체육회가 만들어 갑니다.</p>
-            </div>
-            <div class="inner">
-                <a href="/contents.do?S=S01&M=040101000000">
-                    <dl>
-                        <dt>체육회 사업정보</dt>
-                        <dd>체육회 사업에 대한 사업정보</dd>
-                    </dl>
-                </a>
-                <a href="/board.do?S=S01&M=040200000000&b_code=0000000005">
-                    <dl>
-                        <dt>대회 정보</dt>
-                        <dd>대회정보 관련 자료 확인</dd>
-                    </dl>
-                </a>
-                <a href="/contents.do?S=S01&M=040300000000">
-                    <dl>
-                        <dt>대회 참가 신청</dt>
-                        <dd>대회 참가를 희망하는 <br>단체 등</dd>
-                    </dl>
-                </a>
-
-            </div>
-
-        </section>
-
-        <!-- //체육회 사업 -->
 
         <!-- 화순군 체육회 -->
         <section class="hwasun_wrap">
