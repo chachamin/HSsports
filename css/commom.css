@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**************************************************
+프로그램 ID : common.css
+프로그램 명 : Base Cascading Style Sheets
+작  성   자 : 노희영
+최초 작성일 : 2018/01/17
+최종 작성일 : 
+참고   사항 : 
+**************************************************/
+
+
+/* reset */
+
+* {margin:0; padding:0; border:0 none transparent; box-sizing:border-box;-webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+:before, :after {box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+
+html,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+	font-family: 'NotoSans-DemiLight';
+	-webkit-font-smoothing: antialiased;
+	font-size:15px; line-height:18px; color:#666; /*letter-spacing:-0.03em;*/
+}
+
+
+
+form, fieldset, p, figure {word-break:break-all; word-wrap:break-word;}
+
+caption,legend {visibility:hidden; width:0px; height:0px; font-size:0px; overflow:hidden; line-height:0px; position:absolute;}
+
+fieldset, img {border: 0 none}
+
+menu, ol, ul, li, dl, dt, dd {list-style:none;}
+menu, ol, ul, dl, dt {display:block;}
+
+h1, h2, h3, h4, h5, h6, p {word-break:normal; word-wrap:break-word;}
+h1, h2, h3, h4, h5, h6, strong, th {font-weight:normal;}
+address, caption, pre, em, i {font-style:normal;}
+
+hr{display:none}
+
+
+/* form */
+input, select, textarea, button {color:#666; vertical-align:middle;}
+input::-ms-clear {display: none}
+
+textarea {resize:none;}
+button, label {cursor:pointer;}
+a {text-decoration:none; cursor:pointer; transition:color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.1s linear 0s !important;}
+a:link, a:visited {color:#666;}
+a:hover, a:active {color:#333;}
+
+
+/* tables */
+table {width:100%; border-collapse:collapse;}
+table th, table td {color:#666; vertical-align:top; word-break:normal; word-wrap:break-word;}
+
+
+/* Accessibility */
+.accessibility {visibility:hidden; width:0px; height:0px; font-size:0px; overflow:hidden; line-height:0px; position:absolute;}
+.skip {visibility:hidden; width:0px; height:0px; font-size:0px; overflow:hidden; line-height:0px; position:absolute;}
+
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+
+
+/* 정렬 */
+.pos_R{position:relative;}
+.pos_A{position:absolute;}
+
+.fl {float:left !important;}
+.fr {float:right !important;}
+.fn {float:none !important;}
+.clr {clear:both;}
+
+.tl {text-align:left !important;}
+.tr {text-align:right !important;}
+.tc {text-align:center !important;}
+
+.vt {vertical-align:top;}
+.vb {vertical-align:bottom;}
+.vm, .btns {vertical-align: middle;}
+
+.nobg {background:none !important;}
+.nobd {border:0 none !important;}
+.nobl {border-left:0 none !important;}
+.nomg {margin:0 !important;}
+.nomt {margin-top:0 !important;}
+.noml {margin-left:0 !important;}
+.nopdt {padding-top:0 !important;}
+.nopd {padding:0 !important;}
+.nopb {padding-bottom:0 !important;}
+.nopl {padding-left:0 !important;}
+.nodp {display:none;}
+
+
+::-webkit-input-placeholder {color:#aaa;} 
+:-moz-placeholder {color:#aaa; opacity:1;}
+::-moz-placeholder {color:#aaa; opacity:1;}
+:-ms-input-placeholder {color:#aaa !important;}
+::-ms-input-placeholder {color:#aaa;}
+.placeholder {color:#aaa !important;}
+
+
+/* 폰트 두께 */
+.fw_B{ font-weight:bold}
+.fw_N{ font-weight:normal}
+
+
+/* 칼라 */
+.color_styR{color:#fb7d02}
+.red{color:#c80000}
+.blue{color:#2a5db0}
+
+/* line */
+.line_H1{width:100%; height:1px; clear:both; font-size:0px; line-height:0px; display:block}
+
+
+/* box */
+.box_siz{   
+box-sizing:border-box; /*width 는 padding, border 크기를 포함한 크기*/
+-webkit-box-sizing:border-box; 
+-moz-box-sizing:border-box;
+}
+
+
+/* 공란 */
+.h_space10{width:100%; height:10px; clear:both; display:block}
+.h_space15{width:100%; height:15px; clear:both; display:block}
+.h_space20{width:100%; height:20px; clear:both; display:block}
+.h_space30{width:100%; height:30px; clear:both; display:block}
+.h_space40{width:100%; height:40px; clear:both; display:block}
+.h_space50{width:100%; height:50px; clear:both; display:block}
+.h_space60{width:100%; height:60px; clear:both; display:block}
+.h_space70{width:100%; height:70px; clear:both; display:block}
+.h_space75{width:100%; height:75px; clear:both; display:block}
+.h_space80{width:100%; height:80px; clear:both; display:block}
+.h_space90{width:100%; height:90px; clear:both; display:block}
+.h_space100{width:100%; height:100px; clear:both; display:block}
+
+
+/* 버튼 */
+.btn_line_bl01{ border:1px solid #195dae; height:40px; line-height: 40px; color:#195dae !important; display: inline-block; padding:0 25px}
+.btn_line_bl01:hover{ background:#195dae; color:#fff !important}
+
+.btn_fill_bl01{ border:1px solid #195dae; height:40px; line-height: 40px; background:#195dae;  color:#fff !important; display: inline-block; padding:0 25px}
+.btn_fill_bl01:hover{ border:1px solid #195dae; color:#195dae !important}
+
+
+
+/* 테이블 */
+
+.tb_sty_h01 thead th{ text-align: center; height:45px; line-height: 22px; font-size:18px;  font-family: 'Nanum Barun Gothic Bold';  background: #f7f8fc; color:#195dae;  border:1px solid #e8e8e8; border-bottom:0px; vertical-align: middle}
+.tb_sty_h01 tbody td{height:39px; line-height: 24px;padding:5px 10px; text-align: center;  vertical-align: middle;  border:1px solid #e8e8e8 }
+
+
+.tb_sty_h02 thead th{ text-align: center; height:45px; line-height: 24px; font-size:18px; font-family: 'Nanum Barun Gothic Bold'; background: #f7f8fc; color:#195dae; vertical-align: middle;  border:1px solid #e8e8e8; border-bottom:0px;}
+.tb_sty_h02 tbody td{height:39px;  line-height: 24px;padding:10px 10px; text-align: left;  border:1px solid #e8e8e8; background: #fff; vertical-align: top; padding-bottom:10px;}
+.tb_sty_h02 tbody td:first-child{ vertical-align:middle;  text-align: center; font-family: 'Nanum Barun Gothic Bold'; color:#195dae;  }
+.tb_sty_h02 tbody tr:hover{outline:3px solid #195dae}
+
+
+.tb_sty_h03 thead th{ text-align: center; height:45px; line-height: 24px; font-size:18px; font-family: 'Nanum Barun Gothic Bold'; background: #f7f8fc; color:#195dae; vertical-align: middle;  border:1px solid #e8e8e8; border-bottom:0px;}
+.tb_sty_h03 tbody td{height:39px;  line-height: 24px;padding:10px 10px; text-align: left;  border:1px solid #e8e8e8; background: #fff; vertical-align: top; padding-bottom:10px;}
+.tb_sty_h03 tbody td:nth-child(1){ vertical-align:middle;  text-align: center;}
+.tb_sty_h03 tbody td:nth-child(2){ vertical-align:middle; font-family: 'Nanum Barun Gothic Bold'; color:#195dae;  }
+.tb_sty_h03 tbody tr:hover{outline:3px solid #195dae}
+
+
+.tb_send_form input[type="radio"] {display:none; }
+.tb_send_form label{width:70px;  padding:5px 0; border-radius:3px; text-align: center;; border-radius: 3px; display:inline-block; margin-right:10px;}
+
+.tb_send_form input[type="radio"] + label.send {  border:1px solid #ce2029; display:inline-block; color:#ce2029; }  
+.tb_send_form input[type="radio"]:checked + label.send  {border:1px solid #ce2029; background:#ce2029; color:#fff;  }
+
+.tb_send_form input[type="radio"] + label.standing {  border:1px solid #2569b9; display:inline-block; color:#2569b9; }  
+.tb_send_form input[type="radio"]:checked + label.standing  {border:1px solid #2569b9; background:#2569b9; color:#fff;  }
+
+.tb_send_form input[type="radio"] + label.end {  border:1px solid #999999; display:inline-block; color:#999999; }  
+.tb_send_form input[type="radio"]:checked + label.end  {border:1px solid #999999; background:#999999; color:#fff;  }
+
+
+
+table.basic_table tbody td{padding:12px !important;text-align:center;}
+a.btn{padding:2px 6px;text-align:center;vertical-align: middle;border:1px solid transparent;transition:all .3s ease;border-radius:4px}
+.btn:hover{box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.2);transition: all 0.2s ease 0s;}
+.bg_blue{background:#2a5db0 !important;color:#fff !important;}
+.bg_red{background:#c80000 !important;color:#fff !important;}
+
+ul.ulfl > li{float:left}
+.clear{clear:both !important;}
+.clearfix:after,ul.ulfl:after,#container:after {content:"";width:100%;display:block;visibility:hidden;clear:both;}
