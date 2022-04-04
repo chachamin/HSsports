@@ -624,7 +624,7 @@ p.info_tx span{ color:#ff6600; }
 #header_2017 #nav #gnb > ul > li:nth-child(4){width:100px; margin-right:40px; overflow: hidden;}
 #header_2017 #nav #gnb > ul > li:nth-child(5){width:80px; overflow: hidden;}
 
-#header_2017 #nav #gnb ul li img{ position: absolute; top:130px; left:40px; display:inline-block; padding:0px; border:10px solid #ebf4ff; visibility: hidden}
+#header_2017 #nav #gnb ul li img{ position: absolute; top:90px; left:-380px; display:inline-block;visibility: hidden}
 
 #header_2017 #nav #gnb ul .menu1:hover img{ visibility: visible}
 #header_2017 #nav #gnb ul .menu2:hover img{ visibility: visible}
@@ -664,6 +664,9 @@ z-index: 10000;
 }
 
 /*체육회소식*/
+
+#container{background: url(../images/bg_logo.png) -140px 150px no-repeat, url(../images/bg_01.png) 1280px 600px no-repeat, url(../images/bg_02.png) 0 1130px no-repeat, url(../images/bg_03.png) 1150px 1500px no-repeat;}
+
 .bd_wrap {margin:60px 0 100px 0;}
 .bd_wrap .m_tit h3{color:#17499e;}
 .bd_wrap .m_tit p{ color:#666;}
@@ -679,17 +682,46 @@ z-index: 10000;
 .bd_inner .n_i_wrap .m_notice .m_n_list li::after {content: '';display: block;clear: both;}
 .bd_inner .n_i_wrap .m_notice .m_n_list li .m_n_title {float: left; width: 85%;font-size: 1.125em;color:#000;padding-left: 25px;}
 .bd_inner .n_i_wrap .m_notice .m_n_list li .n_date {float: left;text-align: right;width: 15%;padding-right: 5px;} 
+.bd_inner .n_i_wrap .m_notice .m_n_list li a {width: 100%; display: block}
+.bd_inner .n_i_wrap .m_notice .m_n_list li a:hover .m_n_title {text-decoration: underline;}
 
 .bd_inner .n_i_wrap .ico_q_menu {width: 295px;}
-.bd_inner .n_i_wrap .ico_q_menu .i_q_list li {height: 68px;background: linear-gradient(45deg, #1E6EA6, #17499E);font-size: 1.5em; padding-left: 60px; text-align: center;line-height: 68px;}
-.bd_inner .n_i_wrap .ico_q_menu .i_q_list li a {color:#fff;}
+.bd_inner .n_i_wrap .ico_q_menu .i_q_list li {height: 68px;background: linear-gradient(45deg, #1E6EA6, #17499E);font-size: 1.5em;text-align: center;line-height: 68px;}
+.bd_inner .n_i_wrap .ico_q_menu .i_q_list li a {width: 100%; height: 100%; display: block; color:#fff; padding:0 20px;}
+.bd_inner .n_i_wrap .ico_q_menu .i_q_list li a img {vertical-align: middle; margin-right: 15px;}
 .bd_inner .n_i_wrap .ico_q_menu .i_q_list li:nth-child(2) {margin: 25px 0;}
+.bd_inner .n_i_wrap .ico_q_menu .i_q_list li:nth-child(2) a {padding-right: 35px;}
+.bd_inner .n_i_wrap .ico_q_menu .i_q_list li:nth-child(2) a img {margin-right: 30px;}
+.bd_inner .n_i_wrap .ico_q_menu .i_q_list li a:hover {box-shadow: 5px 5px 5px #999;}
 
 .bd_inner .m_gallery {margin-top: 70px;}
 .bd_inner .m_gallery #gTab::after {content: '';display: block;clear: both;}
 .bd_inner .m_gallery #gTab li {float: left;height: 50px;font-size: 1.5em;line-height: 50px;padding-bottom: 5px;margin-bottom: 40px;}
 .bd_inner .m_gallery #gTab li:first-child{margin-right: 30px;}
 .bd_inner .m_gallery #gTab .f_on {color:#17499E; font-size: 2.188em;border-bottom: 3px solid #17499E;}
+
+.bd_inner .m_gallery #photoG {position: relative;}
+.bd_inner .m_gallery #photoG::after {content: '';display: block;clear: both;}
+.bd_inner .m_gallery #videoG {position: relative;display: none;}
+.bd_inner .m_gallery #videoG::after {content: '';display: block;clear: both;}
+
+.bd_inner .m_gallery .new_g {width: 525px; height: 420px; float: left;position: relative;margin-right: 50px;}
+.bd_inner .m_gallery .new_g::after {content: '';display: block;width: 745px;height: 192px;background: rgba(193, 213, 241, .8);position: absolute;left: -410px;bottom: -43px; z-index: -1;}
+.bd_inner .m_gallery .new_g img {width: 100%; height: 100%; object-fit: cover;}
+.bd_inner .m_gallery .new_g .n_text_box {width: 335px; height: 150px;position: absolute;left: 0;bottom: 0;background: rgba(193, 213, 241, .8);padding: 30px 17px 18px 17px;}
+.bd_inner .m_gallery .new_g .n_text_box .g_title {font-size: 1.250em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;color: #000;font-weight: 500;}
+.bd_inner .m_gallery .new_g .n_text_box .g_date {width: 100%;position: absolute;bottom: 17px;}
+
+.bd_inner .m_gallery .last_g {width: 525px;float: left;}
+.bd_inner .m_gallery .last_g ul li {width: 100%;height: 135px;border-bottom: 1px dashed #ddd;}
+.bd_inner .m_gallery .last_g ul li::after {content: ''; display: block; clear: both;}
+.bd_inner .m_gallery .last_g ul li:nth-child(2) {margin: 8px 0;}
+.bd_inner .m_gallery .last_g ul li img {width: 202px; height: 124px; object-fit: cover; float: left; margin-right: 25px;}
+.bd_inner .m_gallery .last_g ul li .l_text_box {width: 294px; height: 124px; position: relative; float: left; padding-top: 19px;}
+.bd_inner .m_gallery .last_g ul li .l_title {font-size: 1.125em;font-weight: 500;color: #000;word-break:keep-all;line-height: 23px;}
+.bd_inner .m_gallery .last_g ul li .l_date {width: 100%;position: absolute;bottom: 0;}
+
+.bd_inner .m_gallery .g_more {width: 100px; height: 30px; line-height: 30px; text-align: right; font-size: 1.25em;position: absolute;right: 0;top: -80px;}
 
 
 
@@ -722,7 +754,7 @@ z-index: 10000;
 
 
 /* 스포츠 정보 */
-.sports_info{ height:555px; margin-top:80px; background: url(../images/hs_bg.jpg) no-repeat center top;}
+.sports_info{ height:555px; margin-top:150px; background: url(../images/hs_bg.jpg) no-repeat center top;}
 .sports_info .inner{ padding-top:10px;}
 
 .sports_info .inner .grid_top{width:100%; display:table}
@@ -801,7 +833,7 @@ z-index: 10000;
  .scroll-btn {
 	display: block;
 	position: absolute;
-	 top:-100px;
+	 top:-90px;
 	left: 15px;
 	right: 0;
 	text-align: center;
