@@ -696,7 +696,7 @@ z-index: 10000;
 
 .bd_inner .m_gallery {margin-top: 70px;}
 .bd_inner .m_gallery #gTab::after {content: '';display: block;clear: both;}
-.bd_inner .m_gallery #gTab li {float: left;height: 50px;font-size: 1.5em;line-height: 50px;padding-bottom: 5px;margin-bottom: 40px;}
+.bd_inner .m_gallery #gTab li {float: left;height: 50px;font-size: 1.5em;line-height: 50px;padding-bottom: 5px;margin-bottom: 40px;cursor: pointer;}
 .bd_inner .m_gallery #gTab li:first-child{margin-right: 30px;}
 .bd_inner .m_gallery #gTab .f_on {color:#17499E; font-size: 2.188em;border-bottom: 3px solid #17499E;}
 
@@ -716,6 +716,8 @@ z-index: 10000;
 .bd_inner .m_gallery .last_g ul li {width: 100%;height: 135px;border-bottom: 1px dashed #ddd;}
 .bd_inner .m_gallery .last_g ul li::after {content: ''; display: block; clear: both;}
 .bd_inner .m_gallery .last_g ul li:nth-child(2) {margin: 8px 0;}
+.bd_inner .m_gallery .last_g ul li a {width: 100%; display: block;}
+.bd_inner .m_gallery .last_g ul li a:hover .l_date {color:#000;}
 .bd_inner .m_gallery .last_g ul li img {width: 202px; height: 124px; object-fit: cover; float: left; margin-right: 25px;}
 .bd_inner .m_gallery .last_g ul li .l_text_box {width: 294px; height: 124px; position: relative; float: left; padding-top: 19px;}
 .bd_inner .m_gallery .last_g ul li .l_title {font-size: 1.125em;font-weight: 500;color: #000;word-break:keep-all;line-height: 23px;}

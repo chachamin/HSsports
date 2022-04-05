@@ -60,9 +60,16 @@ $(window).scroll(function() {
  
  
  
- 
- 
- 
- 
- 
- 
+  $('#gTab li:first').click(function(){
+    $(this).addClass('f_on');
+    $(this).next().removeClass('f_on')
+    $('#photoG').show();
+    $('#videoG').hide();
+  });
+
+  $('#gTab li:last').click(function(){
+    $(this).addClass('f_on');
+    $(this).prev().removeClass('f_on')
+    $('#videoG').show();
+    $('#photoG').hide();
+  });
