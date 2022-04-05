@@ -17,9 +17,7 @@
 :before, :after {box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
 
 html,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
-	/* font-family: 'NotoSans-DemiLight'; */
-	font-family: 'Nanum Gothic Coding', monospace;
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'NotoSans-DemiLight';
 	-webkit-font-smoothing: antialiased;
 	font-size:15px; line-height:18px; color:#666; /*letter-spacing:-0.03em;*/
 }
