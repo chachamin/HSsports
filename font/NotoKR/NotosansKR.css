@@ -100,3 +100,5 @@
   src: local('NanumMyeongjo ExtraBold'), local('NanumMyeongjoExtraBold'), url(./NanumMyeongjo-ExtraBold.woff) format('woff');
 }
 
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
